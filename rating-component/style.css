@@ -1,0 +1,131 @@
+:root {
+  --clr-very-dark-gray: hsl(216, 12%, 8%);
+  --clr-dark-gray: hsl(213, 19%, 18%);
+  --clr-medium-dark-gray: hsl(216, 12%, 54%);
+  --clr-light-gray: hsl(217, 12%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-orange: hsl(25, 97%, 53%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--clr-very-dark-gray);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+    background-color: var(--clr-very-dark-gray);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.card {
+  background-color: var(--clr-dark-gray);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 20px 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rating p {
+  background-color: var(--clr-medium-dark-gray);
+  color: var(--clr-orange);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.desc {
+  color: var(--clr-light-gray);
+}
+
+.title {
+  color: var(--clr-white);
+}
+
+.btn {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  border-radius: 1rem;
+  border: none;
+  padding: 10px;
+}
+
+.fa-star {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--clr-medium-dark-gray);
+  color: var(--clr-orange);
+  margin-bottom: 2rem;
+  text-align: center;
+}
