@@ -1,0 +1,68 @@
+:root {
+ --clr-white: #fff;
+ --clr-main: #EEEEEE;
+ --ff-color: #333;
+ --line-height: 1.6rem;
+}
+
+body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ background: var(--clr-white);
+ color: var(--ff-color);
+ line-height: var(--line-height);
+}
+
+img {
+ display: block;
+ width: 100%;
+}
+
+.main {
+ background: var(--clr-main);
+
+ width: 90vw;
+ margin: 1.5rem auto;
+}
+
+.header {
+ padding: 2rem;
+ text-align: center;
+}
+
+.img-div {
+ margin: 0 auto;
+ max-width: 50rem;
+}
+
+figcaption {
+ text-align: center;
+ margin-top: 1.5rem;
+ max-width: 50rem;
+}
+
+.timeline {
+ margin: 3rem auto;
+ max-width: 35rem;
+ padding: 1.5rem;
+}
+
+.timeline h3 {
+ text-align: center;
+}
+
+li {
+ margin-top: 1.5rem;
+}
+
+li span {
+ font-weight: 700;
+}
+
+.timeline p {
+ margin-top: 4rem;
+}
+
+.timeline p span {
+ display: block;
+ margin-top: 1rem;
+}
