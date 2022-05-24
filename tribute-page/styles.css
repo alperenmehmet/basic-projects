@@ -40,13 +40,13 @@ figcaption {
  max-width: 50rem;
 }
 
-.timeline {
+#tribute-info {
  margin: 3rem auto;
  max-width: 35rem;
  padding: 1.5rem;
 }
 
-.timeline h3 {
+#tribute-info h3 {
  text-align: center;
 }
 
@@ -58,7 +58,7 @@ li span {
  font-weight: 700;
 }
 
-.timeline p {
+#tribute-info p {
  margin-top: 4rem;
 }
 
