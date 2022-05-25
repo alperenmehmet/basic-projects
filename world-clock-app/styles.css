@@ -28,3 +28,59 @@ a {
  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
  border-radius: 1rem;
 }
+
+.section-center {
+ width: 85vw;
+ margin: 0 auto;
+ max-width: 1170px;
+}
+
+.quote {
+ position: absolute;
+ left: 5%;
+ margin-top: 5rem;
+}
+
+.quote-owner {
+ margin-top: 1rem;
+}
+
+.time {
+ position: absolute;
+ top: 65%;
+ left: 5%;
+ z-index: 1;
+}
+
+.time-message p {
+ display: inline;
+ margin-left: 1.2rem;
+}
+
+.time-zone {
+ margin-top: 1.5rem;
+}
+
+.time-hour-minute {
+ font-weight: 700;
+ font-size: 10rem;
+ line-height: 10rem;
+ letter-spacing: -2.5px;
+}
+
+.time-btn {
+ margin-top: 2rem;
+}
+
+.navbar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: var(--clr-grey-10);
+ z-index: 2;
+ box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+ transform: translateX(-100%);
+ transition: var(--transition);
+}
