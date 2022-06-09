@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@500;700&display=swap');
+
+:root {
+ --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+ --clr-desaturated-dark-blue: hsl(214, 17%, 51%);
+ --clr-grayish-blue: hsl(212, 23%, 69%);
+ --clr-light-grayish-blue: hsl(210, 46%, 95%);
+ --line-height: 1.2;
+ --transition: all 0.3s linear;
+ --border-radius: 0.75rem;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background: var(--clr-grayish-blue);
+}
+
+img {
+ display: block;
+ width: 100%;
+}
+
+/* <== container ==> */
+
+.container {
+ width: 85vw;
+ margin: 3rem auto;
+ border-radius: var(--border-radius);
+ background: var(--clr-light-grayish-blue);
+}
+
+.img-main {
+ border-top-left-radius: var(--border-radius);
+ border-top-right-radius: var(--border-radius);
+}
+
+/* <== info ==> */
+
+.info-container {
+ padding: 3.2rem;
+}
+
+.info-title {
+ color: var(--clr-very-dark-grayish-blue);
+ margin-bottom: 1.2rem;
+ font-weight: 700;
+ line-height: var(--line-height);
+}
+
+.info-person {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.info-details {
+ color: var(--clr-desaturated-dark-blue);
+ font-weight: 500;
+ line-height: var(--line-height);
+ margin-bottom: 2rem;
+}
+
+.info-person img {
+ border-radius: 50%;
+ width: 4rem;
+ height: 4rem;
+}
+
+.info-person-name {
+ margin-left: -6rem;
+ color: var(--clr-very-dark-grayish-blue);
+ font-weight: 700;
+}
+
+.info-person-name span {
+ display: block;
+ padding-top: 0.5rem;
+ color: var(--clr-desaturated-dark-blue);
+ font-weight: 500;
+}
+
+@media screen and (min-width:768px) {
+ .container {
+  display: flex;
+  max-width: 992px;
+ }
+
+ .img-main {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--border-radius);
+  height: 100%;
+  width: 20rem;
+ }
+
+ .info-person img {
+  margin-right: 1rem;
+ }
+
+ .info-person-name {
+  color: var(--clr-very-dark-grayish-blue);
+  font-weight: 700;
+ }
+}
